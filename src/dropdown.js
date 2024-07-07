@@ -1,4 +1,4 @@
-class Dropdown {
+export class Dropdown {
   constructor(element) {
     this.dropdown = element;
     this.toggle = element.querySelector(".dropdown-toggle");
@@ -39,8 +39,3 @@ class Dropdown {
     }
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const dropdowns = document.querySelectorAll(".dropdown");
-  dropdowns.forEach((dropdown) => new Dropdown(dropdown));
-});
